@@ -48,6 +48,6 @@ do
 	printf -- $slurm_text >> $job_file
 	printf -- $module_text >> $job_file
 	printf -- $import_text >> $job_file
-	#sbatch $job_file
+	sbatch $job_file
 done
 
