@@ -8,12 +8,12 @@
 
 
 #USER INPUTS
-data_dir=/n/scratch3/users/c/ccr13/Melanoma_Macs/DATA/
+data_dir=//
 dataset_id=1362
-runtime='0-12:00'
+runtime='D-HH:MM'
 memory='40G'
-partition='short'
-session_id='e2135a36-00b1-4167-9578-c3db1253485e'
+partition=''
+session_id=''
 
 #Creates General Text to Be Printed in Each Job Submission File
 gen_text="#!/bin/bash\n#SBATCH%1s-c%1s1\n#SBATCH%1s-t%1s"$runtime"\n#SBATCH%1s-p%1s"$partition"\n#SBATCH%1s--mem="$memory"\n"
